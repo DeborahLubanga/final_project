@@ -2,18 +2,74 @@
 	<head> 
 		<meta charset = 'UTF-8'>
 		<title>Final Project</title>
+		<link rel = "stylesheet" href ="styles/final_project.css"/>
 		
 		<style>
-		
+			
+			body{overflow: hidden;}
+			
+			#mainScreen {width: 1200px;
+						height: 800px;
+						background-color: blue;
+						z-index: 250;
+						position: absolute;
+						margin: auto;}
+						
+			
+			
+			#welcomeScreen{width: 1200px;
+							height: 800px;
+							margin: auto;
+							z-index: 500;
+							background-color: pink;
+							border: 1px solid black;
+							position: absolute;	
+							transition-property: transform;
+							transition-duration: 2s;							
+														}
+			
+						
+			.enter {transform: translateY(-1500px);}
+							
+			
+			
+			#loadingScreen {width: 1200px;
+							height: 800px;
+							margin: auto;
+							background-color: green;
+							border: 1px solid black;
+							position: absolute;
+							animation-name: loading;
+							animation-duration: 10s;
+							animation-iteration-count:1;
+							animation-fill-mode: forwards;
+							}
+													
+			@keyframes loading{0% {opacity: 1; z-index: 1000;}
+							90%{opacity: 0;}
+							100% {z-index 0;}}
+
+			
 		</style>
 	</head>
 		
 	<body>
-		
+			<div id= "mainScreen">
+			</div>
+	
+			<div id = "welcomeScreen"> 
+				<h1>Hey there</h1>
+			</div>
+			<div id = "loadingScreen" class = "loading"> 
+				<h1> Loading page </h1>
+			</div>
+			
+
 
 	
 	<script src = "js/p5.min.js"></script>
 	<script src = "js/p5.dom.js"></script>
+	<script src = "js/loading.js"></script>
 	
 	</body>
 		
