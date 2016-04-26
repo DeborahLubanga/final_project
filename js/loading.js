@@ -1,9 +1,11 @@
-var welcomeBtn = document.getElementById('welcomeScreen');
+var welcomeBtn = document.getElementById('welcomebutton');
+
+var welcomeScreen = document.getElementById('welcomeScreen');
 
 //Function to make it go away
 
 function entering(){
-	welcomeBtn.className = 'enter';	
+	welcomeScreen.className = 'enter';	
 }
 
 
