@@ -4,6 +4,17 @@
 		<title>Final Project</title>
 		<link rel = "stylesheet" href ="styles/final_project.css"/>
 
+		<style>
+			#hidding {overflow:hidden;
+			
+				width: 1000px;
+				height:505px;
+				top:50%;
+				z-index: 500;
+				position: absolute;	
+				}
+		
+		</style>
 	</head>
 		
 	<body>
@@ -12,14 +23,15 @@
 			<div id= "container">		
 				
 				<div id = "mainScreen">
-					<h1>You're in!</h1>
+				
 				</div>
 				
+				<div id = "hidding">
 				<div id = "welcomeScreen"> 					
 					<h1>Hi!</h1>
 					<button type = 'button' id = "welcomebutton">Click to Enter</button>	
 				</div>
-					
+				</div>	
 					
 				<div class = "loadingScreen" id ="endLoading"> 
 						<h1> Loading page </h1>
