@@ -1,4 +1,4 @@
-var welcomeBtn = document.getElementById('welcomebutton');
+var welcomeBtn = document.getElementById('btnFront');
 
 var welcomeScreen = document.getElementById('welcomeScreen');
 
