@@ -37,9 +37,9 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			
 #welcomeScreen{width: 1000px;
 				height:500px;
-				top:50%;
+				/*top:50%;*/
 				z-index: 500;
-				background-color: pink;
+				background-color: red;
 				border: 1px solid black;
 				position: absolute;	
 				transition-property: transform;
