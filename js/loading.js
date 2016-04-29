@@ -15,6 +15,8 @@ var textColor = [x, 0, 0];
 function setup(){
 	var myCanvas = createCanvas(1000,500);
 	myCanvas.parent('endLoading');
+
+
 }
 
 function draw(){
@@ -29,12 +31,15 @@ function draw(){
 
 //Function to make loading screen go away
 
-function entering(){
-	welcomeScreen.className = 'enter';	
-}
 
 function endingLoading (){
 	endLoading.style.zIndex = "-100";
+}
+
+
+
+function entering(){
+	welcomeScreen.className = 'enter';	
 }
 
 
