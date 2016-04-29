@@ -17,18 +17,19 @@ body {background-image: url("../images/offwhitewall.jpg");}
 .loadingScreen {width: 1000px;
 				height: 500px;
 				top: 50%;
-				background-color: green;
-				border: 1px solid black;
+				background-image: url("../images/offwhitewall.jpg");
 				position: absolute;
 				animation-name: loading;
-				animation-duration: 10s;
+				animation-duration: 5s;
+				animation-delay: 2s;
 				animation-fill-mode: forwards;
 				z-index: 1000;
+				opacity: 1;
 					}
 
 
 					
-@keyframes loading{0% {opacity: 1; }
+@keyframes loading{0% {opacity: 1;}
 					100%{opacity: 0;}
 					}
 			
