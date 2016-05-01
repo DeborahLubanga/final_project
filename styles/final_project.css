@@ -38,7 +38,6 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			
 #welcomeScreen{width: 1000px;
 				height:500px;
-				/*top:50%;*/
 				z-index: 500;
 				background-image: url("../images/offwhitewall.jpg");
 				position: absolute;	
@@ -69,7 +68,6 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			top:50%;
 			margin-top: -250px;
 			background-image: url("../images/corkboard3.png");
-			border: 1 groove brown;
 			z-index: 250;
 			position: relative;
 			}
@@ -121,14 +119,6 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			
 			
 			
-#bottomleft{width: 200px;
-			height: 200px;
-			left: 50px;
-			top: 260px;
-			position: absolute;
-			float: left;
-			background-color: grey;
-			}
 			
 #bottommiddle{width: 200px;
 			height: 200px;
@@ -139,7 +129,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			background-color: pink;
 			}
 			
-#bottommiddle2{width: 200px;
+#bottommiddle2{width: 430px;
 			height: 200px;
 			left: 520px;
 			top: 260px;
@@ -148,12 +138,5 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			background-color: orange;
 			}
 
-#bottomright{width: 200px;
-			height: 200px;
-			left: 750px;
-			top: 260px;
-			position: absolute;
-			float: left;
-			background-color: purple;
-			}
+
 				
