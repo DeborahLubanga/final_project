@@ -4,6 +4,7 @@ var welcomeScreen = document.getElementById('welcomeScreen');
 
 var endLoading = document.getElementById('endLoading');
 
+
 var x =  Math.floor(Math.random() * 360);
 //var y =  Math.floor(Math.random() * 360);
 //var z =  Math.floor(Math.random() * 360);
@@ -40,13 +41,16 @@ function endingLoading (){
 
 function entering(){
 	welcomeScreen.className = 'enter';	
-}
+	}
 
 
+	
 //event listeners
+
+endLoading.addEventListener("animationend", endingLoading);
 
 welcomeBtn.addEventListener('click', entering);
 
-endLoading.addEventListener("animationend", endingLoading)
+
 
 
