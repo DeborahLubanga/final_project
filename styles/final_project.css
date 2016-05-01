@@ -136,7 +136,13 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			position: absolute;
 			float: left;
 			background-color: orange;
+			opacity: 0.2;
+			transition-property: opacity;
+			transition-duration: 2s;
+			transition-timing-function: ease-in-out;
 			}
+			
+#bottommiddle2:hover{opacity: 1;}	
 
 
 				
