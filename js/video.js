@@ -3,6 +3,7 @@ var clouds;
 function setup(){
 	var myCanvas = createCanvas(430, 200);
 	myCanvas.parent('bottommiddle2');
+
 	
 	clouds = createVideo('video/clouds2.mp4');
 	clouds.loop();
@@ -12,10 +13,10 @@ function setup(){
 
 function draw(){
 	background(255);
-	image(clouds, 0, 0, 430, 200);
+	image(clouds, 10, 10, 430, 200);
 	
-	if (mouseIsPressed){filter (OPAQUE);}
-	else {filter(GRAY)};
-
+	if (mouseIsPressed){filter (OPAQUE);
+		}
+	else {filter(GRAY); }
 		
 	}

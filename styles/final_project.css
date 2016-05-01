@@ -42,7 +42,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 				background-image: url("../images/offwhitewall.jpg");
 				position: absolute;	
 				transition-property: transform;
-				transition-duration: 2s;							
+				transition-duration: 3s;							
 				}
 
 		
@@ -79,7 +79,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			position: absolute;
 			float: left;
 			background: linear-gradient( black, grey, white);
-			opacity: 0.2;
+			opacity: 0.4;
 			transition-property: opacity;
 			transition-duration: 2s;
 			transition-timing-function: ease-in-out;
@@ -90,23 +90,47 @@ body {background-image: url("../images/offwhitewall.jpg");}
 }
 
 		
-#topmiddle{width: 200px;
+#topmiddle{width: 310px;
 			height: 200px;
 			left: 280px;
 			top: 40px;
 			position: absolute;
 			float: left;
-			background-color: green;
+			overflow: hidden;
+			background-color: #57068c;
+			background-image: url('../images/nyu_torch.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: 0.2;
+			transition: opacity 2s ease-in-out, transform 1s linear;
+		
 			}
-			
+
+#topmiddle:hover{opacity: 1;}	
+
+#topmiddle:active{transform: scale(1.05);}
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+#N2016{	text-align: center;
+		font-size: 5em;
+		text-shadow: 2px 2px #000000;
+		vertical-align: middle;
+		font-family: Oswald, Helevita, Verdana;
+		position:relative;} 
+		
+
+		
 #topmiddle2{width: 200px;
 			height: 200px;
-			left: 520px;
+			left: 620px;
 			top: 40px;
 			position: absolute;
 			float: left;
 			background-color: blue;
 			}
+
 
 #topright{width: 200px;
 			height: 200px;
@@ -129,13 +153,13 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			background-color: pink;
 			}
 			
-#bottommiddle2{width: 430px;
-			height: 200px;
-			left: 520px;
-			top: 260px;
+#bottommiddle2{width: 440px;
+			height: 210px;
+			left: 500px;
+			top: 250px;
 			position: absolute;
 			float: left;
-			background-color: orange;
+			background-color: white;
 			opacity: 0.2;
 			transition-property: opacity;
 			transition-duration: 2s;

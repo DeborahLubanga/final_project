@@ -4,6 +4,8 @@ var welcomeScreen = document.getElementById('welcomeScreen');
 
 var endLoading = document.getElementById('endLoading');
 
+var swoosh; 
+
 
 var x =  Math.floor(Math.random() * 360);
 //var y =  Math.floor(Math.random() * 360);
@@ -11,11 +13,19 @@ var x =  Math.floor(Math.random() * 360);
 
 var textColor = [x, 0, 0];
 
+function preload(){
+	swoosh = loadSound('sounds/draw_opening.mp3');
+	
+	//Sound Source: http://soundbible.com/613-Drawer-Opening.html
+}
+
 
 //Creating Canvas
 function setup(){
 	var myCanvas = createCanvas(1000,500);
 	myCanvas.parent('endLoading');
+	
+
 
 
 }
@@ -38,9 +48,9 @@ function endingLoading (){
 }
 
 
-
 function entering(){
 	welcomeScreen.className = 'enter';	
+	swoosh.play();
 	}
 
 
