@@ -92,7 +92,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 		
 #topmiddle{width: 310px;
 			height: 200px;
-			left: 280px;
+			left: 260px;
 			top: 40px;
 			border-radius: 25px;
 			position: absolute;
@@ -123,26 +123,42 @@ body {background-image: url("../images/offwhitewall.jpg");}
 		
 
 		
-#topmiddle2{width: 200px;
+#topmiddle2{width: 350px;
 			height: 200px;
-			left: 620px;
+			left: 590px;
 			top: 40px;
 			position: absolute;
 			float: left;
-			background-color: blue;
+			background-repeat: no-repeat;
+			background: url('../images/puzzle.png'), linear-gradient(45deg, #10c697, #b510c6, #c67a10);
+			background-size: 300% 300%;
+			animation-name: shiftingColors;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-direction: alternate-reverse;
+			opacity: 0.3;
+			transition-duration:opacity;
+			transition-duration: 2s;
+			transition-timing-function: ease-in-out;
 			}
 
+h1.dream {color: white;
+		text-align:center;
+		font-size: 2em;
+		top: 20px;
+		vertical-align: middle;
+		font-family: Oswald, Helevita, Verdana;
+		position:relative;}
 
-#topright{width: 200px;
-			height: 200px;
-			left: 750px;
-			top: 40px;
-			position: absolute;
-			float: left;
-			background-color: red;
-			}
-			
-			
+
+@keyframes shiftingColors { 
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+#topmiddle2:hover{opacity: 1;}
 			
 			
 #bottommiddle{width: 200px;
