@@ -94,6 +94,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			height: 200px;
 			left: 280px;
 			top: 40px;
+			border-radius: 25px;
 			position: absolute;
 			float: left;
 			overflow: hidden;
@@ -101,7 +102,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			background-image: url('../images/nyu_torch.png');
 			background-repeat: no-repeat;
 			background-position: center;
-			opacity: 0.2;
+			opacity: 0.5;
 			transition: opacity 2s ease-in-out, transform 1s linear;
 		
 			}
@@ -147,11 +148,30 @@ body {background-image: url("../images/offwhitewall.jpg");}
 #bottommiddle{width: 200px;
 			height: 200px;
 			left: 280px;
-			top: 260px;
+			top: 255px;
 			position: absolute;
 			float: left;
-			background-color: pink;
+			overflow: hidden;
+			background-image: url('../images/circleQuote2.png');
+			background-repeat: no-repeat;
+			background-position: center;
 			}
+
+#inBottomMidTop{width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			opacity: 1;
+			transition: opacity 2s, transform 2s;
+			background-image: url('../images/circleQuote1.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			z-index: 10;
+			position: absolute;
+			background-color: white;
+			}
+			
+#inBottomMidTop:hover{opacity:0;}
+					
 			
 #bottommiddle2{width: 440px;
 			height: 210px;
@@ -160,7 +180,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 			position: absolute;
 			float: left;
 			background-color: white;
-			opacity: 0.2;
+			opacity: 0.5;
 			transition-property: opacity;
 			transition-duration: 2s;
 			transition-timing-function: ease-in-out;
