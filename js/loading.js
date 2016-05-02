@@ -20,26 +20,6 @@ function preload(){
 }
 
 
-//Creating Canvas
-function setup(){
-	var myCanvas = createCanvas(1000,500);
-	myCanvas.parent('endLoading');
-	
-
-
-
-}
-
-function draw(){
-	textSize(150);
-	textAlign(CENTER, CENTER);
-	textFont("Helevetic");
-	var welcome = "WELCOME";
-	fill(textColor);
-	text(welcome, canvas.width/2,  canvas.height/2);
-	
-}
-
 //Function to make loading screen go away
 
 

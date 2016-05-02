@@ -25,12 +25,13 @@ body {background-image: url("../images/offwhitewall.jpg");}
 				animation-fill-mode: forwards;
 				z-index: 1000;
 				opacity: 1;
-					}
+				}
 
 
 					
-@keyframes loading{0% {opacity: 1;}
-					100%{opacity: 0;}
+@keyframes loading{0% {opacity: 1; }				
+					50% {opacity: 1; box-shadow: 30px 30px 5px #888888;}
+					100%{opacity: 0; box-shadow: 60px 60px 10px #888888;}
 					}
 			
 
@@ -42,7 +43,7 @@ body {background-image: url("../images/offwhitewall.jpg");}
 				background-image: url("../images/offwhitewall.jpg");
 				position: absolute;	
 				transition-property: transform;
-				transition-duration: 3s;							
+				transition-duration: 3s;	
 				}
 
 		
@@ -171,23 +172,22 @@ h1.dream {color: white;
 			background-image: url('../images/circleQuote2.png');
 			background-repeat: no-repeat;
 			background-position: center;
+			opacity: 0.9;
 			}
+img.circle {display: block;
+			position: relative;
+			top: -5px;
+			left: -5px;
+			transition-property: transform 2s, opacity 2s;
+			transition-duration: 2s;
+			opacity: 0.9;
+			}
+		
 
-#inBottomMidTop{width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			opacity: 1;
-			transition: opacity 2s, transform 2s;
-			background-image: url('../images/circleQuote1.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			z-index: 10;
-			position: absolute;
-			background-color: white;
-			}
+.circle:active{transform: translate(100px,200px);
+				opacity: 0.5}
 			
-#inBottomMidTop:hover{opacity:0;}
-					
+				
 			
 #bottommiddle2{width: 440px;
 			height: 210px;
